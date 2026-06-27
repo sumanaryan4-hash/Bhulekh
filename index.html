@@ -1,197 +1,227 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>बिहार भूमि दस्तावेज़ सेवा</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="बिहार भूमि दस्तावेज़ सेवा – खतीयान, नक्शा, जमाबंदी, रजिस्टर-II, केवाला और मापीवाद अभिलेख प्राप्त करें।">
+  <meta name="keywords" content="बिहार भूमि सेवा, खतीयान, नक्शा, जमाबंदी, रजिस्टर-II, केवाला, बिहार">
+  <title>बिहार भूमि दस्तावेज़ सेवा</title>
 
-<script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700;800&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;700;800&display=swap" rel="stylesheet">
-
-<style>
-body{
-  font-family:'Noto Sans Devanagari',sans-serif;
-}
-.hero-bg{
-  background:
-  linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-  url('https://images.unsplash.com/photo-1500382017468-9049fed747ef');
-  background-size:cover;
-  background-position:center;
-}
-</style>
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Noto Sans Devanagari', sans-serif;
+      background: #f7f9f4;
+    }
+    .hero-bg {
+      background:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+    .card-hover {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    }
+  </style>
 </head>
+<body class="text-gray-900">
 
-<body class="bg-gray-100">
+<header class="hero-bg min-h-screen text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <nav class="flex flex-col md:flex-row justify-between items-center py-5 gap-4">
+      <div class="flex items-center gap-3">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/EmblemofBihar.svg/512px-EmblemofBihar.svg.png" alt="बिहार का प्रतीक" class="h-14 md:h-16">
+        <div>
+          <p class="font-extrabold text-xl">बिहार भूमि सेवा</p>
+          <p class="text-sm text-gray-200">दस्तावेज़, नक्शा एवं राजस्व रिकार्ड सेवा</p>
+        </div>
+      </div>
 
-<!-- HERO -->
-<section class="hero-bg min-h-screen text-white">
+      <div class="flex flex-wrap justify-center gap-3 text-sm md:text-base">
+        <a href="#services" class="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20">सेवाएँ</a>
+        <a href="#about" class="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20">हमारे बारे में</a>
+        <a href="#contact" class="px-4 py-2 rounded-full bg-white/10 hover:bg-white/20">संपर्क</a>
+      </div>
+    </nav>
 
-<div class="max-w-7xl mx-auto px-4">
+    <div class="text-center py-16 md:py-24">
+      <h1 class="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight">
+        बिहार भूमि दस्तावेज़ सेवा
+      </h1>
+      <p class="mt-6 text-lg sm:text-xl md:text-2xl max-w-3xl mx-auto text-gray-100">
+        बिहार के किसी भी जिला, अंचल एवं मौजा का खतीयान, नक्शा, जमाबंदी,
+        रजिस्टर-II, केवाला और मापीवाद अभिलेख प्राप्त करें।
+      </p>
 
-<div class="flex justify-between items-center py-5">
+      <div class="mt-10 flex flex-wrap justify-center gap-4">
+        <a href="tel:+919529965904" class="bg-yellow-500 hover:bg-yellow-400 px-8 py-4 rounded-xl font-bold text-black">
+          📞 अभी कॉल करें
+        </a>
+        <a href="https://wa.me/919529965904?text=नमस्ते%2C%20मुझे%20भूमि%20दस्तावेज%20की%20जानकारी%20चाहिए।" class="bg-green-600 hover:bg-green-500 px-8 py-4 rounded-xl font-bold">
+          💬 WhatsApp पर पूछें
+        </a>
+      </div>
 
-<div class="flex gap-4 items-center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/EmblemofBihar.svg/512px-EmblemofBihar.svg.png" class="h-16">
-<span class="font-bold text-xl">बिहार भूमि सेवा</span>
-</div>
+      <div class="mt-8 flex flex-wrap justify-center gap-2 text-sm">
+        <span class="bg-white/10 px-3 py-2 rounded-full">खतीयान</span>
+        <span class="bg-white/10 px-3 py-2 rounded-full">नक्शा</span>
+        <span class="bg-white/10 px-3 py-2 rounded-full">जमाबंदी</span>
+        <span class="bg-white/10 px-3 py-2 rounded-full">रजिस्टर-II</span>
+        <span class="bg-white/10 px-3 py-2 rounded-full">केवाला</span>
+      </div>
+    </div>
+  </div>
+</header>
 
-<a href="https://wa.me/919529965904"
-class="bg-green-500 px-5 py-3 rounded-xl font-bold">
-WhatsApp
-</a>
+<main>
+  <section id="about" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-green-700">हमारी सेवा क्यों चुनें?</h2>
+        <p class="mt-4 text-gray-600">
+          सरल प्रक्रिया, तेज़ जवाबदेही और पूरी जानकारी के साथ भूमि दस्तावेज़ की मदद प्रदान की जाती है।
+        </p>
+      </div>
 
-</div>
+      <div class="mt-10 grid md:grid-cols-3 gap-8">
+        <div class="bg-gray-50 rounded-2xl p-6 shadow-sm border border-gray-100">
+          <div class="text-4xl mb-3">⚡</div>
+          <h3 class="text-xl font-bold mb-2">तेज़ मदद</h3>
+          <p class="text-gray-600">आवश्यक जानकारी तुरंत साझा की जाती है और सेवा की दिशा स्पष्ट की जाती है।</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-6 shadow-sm border border-gray-100">
+          <div class="text-4xl mb-3">📍</div>
+          <h3 class="text-xl font-bold mb-2">सारा बिहार कवर</h3>
+          <p class="text-gray-600">जिला, अंचल और मौजा के अनुसार सही दस्तावेज़ की पहचान की जाती है।</p>
+        </div>
+        <div class="bg-gray-50 rounded-2xl p-6 shadow-sm border border-gray-100">
+          <div class="text-4xl mb-3">📝</div>
+          <h3 class="text-xl font-bold mb-2">सही जानकारी</h3>
+          <p class="text-gray-600">आपके लिए सबसे जरूरी दस्तावेज़ और रिकार्ड की पूरी जानकारी दी जाती है।</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="text-center pt-24">
+  <section id="services" class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900">उपलब्ध दस्तावेज़</h2>
+        <p class="mt-3 text-gray-600">भूमि से जुड़ी प्रमुख सेवाएँ यहाँ उपलब्ध हैं।</p>
+      </div>
 
-<h1 class="text-5xl md:text-7xl font-extrabold leading-tight">
-बिहार भूमि दस्तावेज़ सेवा
-</h1>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+          <img src="YOUR_KHATIYAN_IMAGE.jpg" alt="खतीयान दस्तावेज़" class="h-52 w-full object-cover">
+          <div class="p-5">
+            <h3 class="text-2xl font-bold text-green-700">खतीयान</h3>
+            <p class="mt-2 text-gray-600">भूमि स्वामित्व और खसरा संबंधी विवरण प्राप्त करें।</p>
+          </div>
+        </div>
 
-<p class="mt-6 text-xl md:text-2xl max-w-3xl mx-auto">
-बिहार के किसी भी जिला, अंचल एवं मौजा का
-खतीयान, नक्शा, जमाबंदी, रजिस्टर-II एवं केवाला प्राप्त करें।
-</p>
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+          <img src="YOUR_MAP_IMAGE.jpg" alt="नक्शा" class="h-52 w-full object-cover">
+          <div class="p-5">
+            <h3 class="text-2xl font-bold text-green-700">नक्शा</h3>
+            <p class="mt-2 text-gray-600">खेसरा, प्लॉट और भूमि सीमा के नक्शे की जानकारी।</p>
+          </div>
+        </div>
 
-<div class="mt-10 flex flex-wrap justify-center gap-4">
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+          <img src="YOUR_JAMABANDI_IMAGE.jpg" alt="जमाबंदी" class="h-52 w-full object-cover">
+          <div class="p-5">
+            <h3 class="text-2xl font-bold text-green-700">जमाबंदी</h3>
+            <p class="mt-2 text-gray-600">राजस्व अभिलेख और भूमि विवरण की सहायता।</p>
+          </div>
+        </div>
 
-<a href="tel:+919529965904"
-class="bg-yellow-500 px-8 py-4 rounded-xl font-bold text-black">
-📞 Call Now
-</a>
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+          <img src="YOUR_REGISTER2_IMAGE.jpg" alt="रजिस्टर-II" class="h-52 w-full object-cover">
+          <div class="p-5">
+            <h3 class="text-2xl font-bold text-green-700">रजिस्टर-II</h3>
+            <p class="mt-2 text-gray-600">राजस्व रिकॉर्ड और संबंधित विवरण की जानकारी।</p>
+          </div>
+        </div>
 
-<a href="https://wa.me/919529965904"
-class="bg-green-500 px-8 py-4 rounded-xl font-bold">
-💬 WhatsApp
-</a>
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+          <img src="YOUR_KEWALA_IMAGE.jpg" alt="केवाला" class="h-52 w-full object-cover">
+          <div class="p-5">
+            <h3 class="text-2xl font-bold text-green-700">खरीद-बिक्री केवाला</h3>
+            <p class="mt-2 text-gray-600">विक्रय/खरीद अनुबंध से जुड़ा दस्तावेज़ उपलब्ध कराया जाता है।</p>
+          </div>
+        </div>
 
-</div>
+        <div class="bg-white rounded-2xl overflow-hidden shadow-lg card-hover">
+          <img src="YOUR_MAAPIWAAD_IMAGE.jpg" alt="मापीवाद अभिलेख" class="h-52 w-full object-cover">
+          <div class="p-5">
+            <h3 class="text-2xl font-bold text-green-700">मापीवाद अभिलेख</h3>
+            <p class="mt-2 text-gray-600">भूमि मापी और सीमांकन से जुड़े अभिलेख की सहायता।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-</div>
+  <section id="contact" class="bg-green-700 text-white py-16">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">दस्तावेज़ हेतु संपर्क करें</h2>
+      <p class="text-center text-green-100 mb-8">अपनी जानकारी भरें, हम आपकी सहायता के लिए WhatsApp पर तुरंत संपर्क करेंगे।</p>
 
-</div>
+      <form id="contactForm" class="bg-white text-black rounded-2xl p-6 md:p-8 shadow-2xl">
+        <label class="block mb-2 font-semibold">पूरा नाम</label>
+        <input type="text" name="name" required placeholder="आपका नाम" class="w-full border border-gray-300 p-3 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-green-500">
 
-</section>
+        <label class="block mb-2 font-semibold">जिला / अंचल / मौजा</label>
+        <input type="text" name="location" required placeholder="जिला, अंचल या मौजा" class="w-full border border-gray-300 p-3 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-green-500">
 
-<!-- SERVICES -->
-<section class="py-16">
+        <label class="block mb-2 font-semibold">मोबाइल नंबर</label>
+        <input type="tel" name="phone" required placeholder="मोबाइल नंबर" class="w-full border border-gray-300 p-3 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-green-500">
 
-<div class="max-w-7xl mx-auto px-4">
+        <label class="block mb-2 font-semibold">आवश्यक दस्तावेज़</label>
+        <textarea name="details" rows="4" required placeholder="आप किस दस्तावेज़ की जानकारी चाह रहे हैं?" class="w-full border border-gray-300 p-3 rounded mb-4 focus:outline-none focus:ring-2 focus:ring-green-500"></textarea>
 
-<h2 class="text-4xl font-bold text-center mb-10">
-उपलब्ध दस्तावेज़
-</h2>
+        <button type="submit" class="w-full bg-green-600 hover:bg-green-500 text-white p-4 rounded-xl font-bold">
+          WhatsApp पर भेजें
+        </button>
+      </form>
+    </div>
+  </section>
+</main>
 
-<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-<!-- Replace image URLs with your actual document thumbnails -->
-
-<div class="bg-white rounded-2xl overflow-hidden shadow-lg">
-<img src="YOUR_KHATIYAN_IMAGE.jpg" class="h-52 w-full object-cover">
-<div class="p-5">
-<h3 class="text-2xl font-bold text-green-700">खतीयान</h3>
-<p>भूमि स्वामित्व विवरण</p>
-</div>
-</div>
-
-<div class="bg-white rounded-2xl overflow-hidden shadow-lg">
-<img src="YOUR_MAP_IMAGE.jpg" class="h-52 w-full object-cover">
-<div class="p-5">
-<h3 class="text-2xl font-bold text-green-700">नक्शा</h3>
-<p>खेसरा एवं प्लॉट नक्शा</p>
-</div>
-</div>
-
-<div class="bg-white rounded-2xl overflow-hidden shadow-lg">
-<img src="YOUR_JAMABANDI_IMAGE.jpg" class="h-52 w-full object-cover">
-<div class="p-5">
-<h3 class="text-2xl font-bold text-green-700">जमाबंदी</h3>
-<p>राजस्व अभिलेख</p>
-</div>
-</div>
-
-<div class="bg-white rounded-2xl overflow-hidden shadow-lg">
-<img src="YOUR_REGISTER2_IMAGE.jpg" class="h-52 w-full object-cover">
-<div class="p-5">
-<h3 class="text-2xl font-bold text-green-700">रजिस्टर-II</h3>
-<p>राजस्व रिकॉर्ड</p>
-</div>
-</div>
-
-<div class="bg-white rounded-2xl overflow-hidden shadow-lg">
-<img src="YOUR_KEWALA_IMAGE.jpg" class="h-52 w-full object-cover">
-<div class="p-5">
-<h3 class="text-2xl font-bold text-green-700">खरीद-बिक्री केवाला</h3>
-<p>Sale Deed Copy</p>
-</div>
-</div>
-
-<div class="bg-white rounded-2xl overflow-hidden shadow-lg">
-<img src="YOUR_MAAPIWAAD_IMAGE.jpg" class="h-52 w-full object-cover">
-<div class="p-5">
-<h3 class="text-2xl font-bold text-green-700">मापीवाद अभिलेख</h3>
-<p>Mapiwaad Abhilekh</p>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- FORM -->
-<section class="bg-green-700 text-white py-16">
-
-<div class="max-w-3xl mx-auto px-4">
-
-<h2 class="text-4xl font-bold text-center mb-8">
-दस्तावेज़ हेतु संपर्क करें
-</h2>
-
-<form class="bg-white text-black rounded-2xl p-8">
-
-<input type="text"
-placeholder="पूरा नाम"
-class="w-full border p-3 rounded mb-4">
-
-<input type="text"
-placeholder="जिला / अंचल / मौजा"
-class="w-full border p-3 rounded mb-4">
-
-<input type="tel"
-placeholder="मोबाइल नंबर"
-class="w-full border p-3 rounded mb-4">
-
-<textarea
-placeholder="आवश्यक दस्तावेज़"
-class="w-full border p-3 rounded mb-4"></textarea>
-
-<button
-class="w-full bg-green-600 text-white p-4 rounded-xl font-bold">
-Submit Request
-</button>
-
-</form>
-
-</div>
-
-</section>
-
-<!-- FOOTER -->
 <footer class="bg-gray-900 text-white text-center py-8">
-<p>📞 +91 95299 65904</p>
-<p class="mt-2">खतीयान | नक्शा | जमाबंदी | रजिस्टर-II | केवाला</p>
+  <p class="font-semibold">📞 +91 95299 65904</p>
+  <p class="mt-2 text-gray-300">खतीयान | नक्शा | जमाबंदी | रजिस्टर-II | केवाला</p>
 </footer>
 
-<!-- Floating WhatsApp -->
-<a href="https://wa.me/919529965904"
-class="fixed bottom-6 right-6 bg-green-500 h-16 w-16 rounded-full flex items-center justify-center text-3xl text-white shadow-2xl">
-💬
+<a href="https://wa.me/919529965904" class="fixed bottom-6 right-6 bg-green-500 h-16 w-16 rounded-full flex items-center justify-center text-3xl text-white shadow-2xl hover:bg-green-600">
+  💬
 </a>
 
+<script>
+  document.getElementById('contactForm').addEventListener('submit', function (event) {
+    event.preventDefault();
+
+    const formData = new FormData(this);
+    const name = formData.get('name') || 'अज्ञात';
+    const location = formData.get('location') || 'अज्ञात';
+    const phone = formData.get('phone') || 'अज्ञात';
+    const details = formData.get('details') || 'कोई जानकारी नहीं';
+
+    const message = `नमस्ते, मैं ${name} हूँ। मैं ${location} के लिए भूमि दस्तावेज़ की जानकारी चाहता/चाहती हूँ। मोबाइल: ${phone}. अतिरिक्त जानकारी: ${details}`;
+    const whatsappUrl = `https://wa.me/919529965904?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappUrl, '_blank', 'noopener,noreferrer');
+    this.reset();
+  });
+</script>
 </body>
 </html>
 ```
